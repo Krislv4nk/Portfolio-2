@@ -32,10 +32,20 @@ border: 5px solid rgb(255, 255, 255);
      line-height: 16px;
      margin-top: 10px;
 }
-
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 .slick-arrow {
-    background-color: rgb(11, 11, 11);
+    background-color: rgb(10, 10, 10);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -43,38 +53,47 @@ border: 5px solid rgb(255, 255, 255);
     bottom: 0px;
     cursor: pointer;
     z-index: 1;
+    animation: pulse 2s infinite;
 }
 .slick-arrow:hover,
 .slick-arrow:focus {
     background-color: black;
 }
 .slider-img {
-    padding: 40px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font-family: Raleway;
     color: white;
+    width: 100%;
 }
 
 /*-----FIRST SLIDE-----*/
 .first {
+    width: 90%;
+    height: 90%;
     text-align: center;
+    padding: 40px;
     font-size: 30px;
     line-height: 50px;
     font-weight: 600;
 }
 .myFoto {
-    width: 300px;
+    width: 30%;
     height: auto;
     margin: auto;
 }
 
 /*-----SECOND SLIDE-----*/
+.second {
+    padding: 40px;
+}
 .second-slide-wrapper {
 display: flex;
+justify-content: center;
+align-items: center;
 gap: 50px;
 margin-bottom: 20px;
 }
@@ -84,6 +103,7 @@ margin-bottom: 20px;
     font-weight: 500;
     margin-left: 0px;
     margin-top: 0px;
+    text-align: center;
 }
 .links-wrapper {
     display: flex;
@@ -91,7 +111,7 @@ margin-bottom: 20px;
     gap: 10px;
 }
 .water-img {
-    width: 300px;
+    width: 30%;
     height: auto;
 }
 .link {
@@ -106,13 +126,14 @@ margin-bottom: 20px;
 .description-project {
     font-family: Raleway;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
 font-weight: 300;
 margin: 10px 0;
+flex-grow: 1;
 }
 .tools {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     font-weight: 300;
     list-style: none;
@@ -122,20 +143,76 @@ margin: 10px 0;
 .tools-list {
     display: flex;
     gap: 10px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
     font-weight: 300;
     list-style: none;
     padding-left: 0px;
 }
 /*-----THIRD SLIDE-----*/
+.third {
+    padding: 40px;
+}
 
-
+.phone-book-img {
+    width: 50%;
+    height: auto;
+}
+.phone-img {
+    width: 25%;
+    height: auto;
+}
 /*-----FOURTH SLIDE-----*/
+.fourth {
+    padding: 40px;
+}
 
-
+.food-store-img {
+    width: 100%;
+    height: auto;
+}
 /*-----FIFTH SLIDE-----*/
+.fifth {
+    padding: 40px;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+}
 
+.fifth-slide-wrapper {
+    margin-top: 50px;
+display: flex;
+gap: 70px;
+align-items: center;
+flex-direction: column;
+}
+.thank-you {
+    font-size: 40px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.contacts-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 30px 0;
+}
 
-
-/*-----SIXTH SLIDE-----*/
+.contacts {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+     display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 44px;
+}
+.icon {
+    fill: blue;
+}
