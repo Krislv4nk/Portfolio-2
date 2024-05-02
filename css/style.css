@@ -1,11 +1,7 @@
-.wrapper{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    overflow: auto;
-   justify-content: center;
-   align-items: center;
-}
+@media screen and (min-width: 500px) {
+
+
+
 
 #myVideo {
     position: absolute;
@@ -20,7 +16,7 @@ border: 5px solid rgb(255, 255, 255);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    height: 90%;
+    height: 50%;
     position: relative;
 }
 
@@ -215,4 +211,17 @@ flex-direction: column;
 }
 .icon {
     fill: blue;
+}
+}
+
+@media screen and (min-width: 800px) {
+    .slider {
+        height: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .slider {
+        height: 90%;
+    }
 }
