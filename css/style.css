@@ -180,6 +180,8 @@ flex-grow: 1;
     line-height: 50px;
     font-weight: 600;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .fifth-slide-wrapper {
