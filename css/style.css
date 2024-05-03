@@ -188,6 +188,7 @@ display: flex;
 gap: 70px;
 align-items: center;
 flex-direction: column;
+justify-content: center;
 }
 .thank-you {
     font-size: 40px;
