@@ -2,9 +2,22 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    overflow: auto;
+    overflow: hidden;
    justify-content: center;
    align-items: center;
+
+   ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: transparent;
+    }
 }
 #myVideo {
     position: absolute;
@@ -49,7 +62,7 @@ border: 5px solid rgb(255, 255, 255);
 }
 
 .slick-arrow {
-    background-color: rgb(165, 164, 164);
+    background-color: rgb(78, 110, 216);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -61,7 +74,7 @@ border: 5px solid rgb(255, 255, 255);
 }
 .slick-arrow:hover,
 .slick-arrow:focus {
-    background-color: rgba(196, 138, 84, 0.634);
+    background-color: rgba(33, 95, 204, 0.519);
 }
 .slider-img {
     
@@ -124,10 +137,10 @@ margin-bottom: 20px;
 
 @keyframes blink {
         0% {
-            color: #4CAF50;
+            color: silver;
         }
         100% {
-            color: #FF5722;
+            color: #3b3b3a;
         }
     }
 .link {
