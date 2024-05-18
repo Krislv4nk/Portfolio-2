@@ -259,7 +259,11 @@ justify-content: center;
  /* SIXTH SLIDE */
 
  .camper-img {
- width: 25%;
+ width: 20%;
     height: auto;
  }
- 
+  
+ .camper-club-img {
+    width: 30%;
+    height: auto;
+ }
